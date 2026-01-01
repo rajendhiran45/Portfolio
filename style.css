@@ -1,0 +1,230 @@
+body{
+    background: black;
+    margin: 25px;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left:25px;
+    cursor: pointer;
+   
+}
+.main{
+    width: 300px;
+    height: 300px;
+    border: 4px;
+    border-color: white;
+    border-radius: 2px;
+    border-style: solid;
+    margin-top: 50px;
+}
+.name{
+    font-size: 60px;
+    color: white;
+    margin-left: 175px;
+    transition: 0.3s;
+}
+.name:hover{
+    color:gray
+  
+}
+.sub{
+    color: white;
+    margin-left: 195px;
+    transition: 0.3s;
+}
+.sub:hover{
+    color: grey;
+    cursor:pointer;
+}
+.about_me{
+    color: white;
+    margin: 20px;
+
+}
+.about{
+    font-size: 30px;
+    transition: 0.3s;
+}
+.about:hover{
+    color: gray;
+    cursor: pointer;
+}
+.card{
+    margin: 25px;
+}
+.skill{
+    font-size: 30px;
+    transition: 0.3s;
+    color: white;
+    display: block;
+}
+.skill:hover{
+    color: gray;
+    cursor: pointer;
+}
+.skill-img img{
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+.skill-img img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+span {
+    margin-top: 8px;
+    font-size: 14px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.projects{
+    margin: 25px;
+}
+.project-name{
+    font-size: 30px;
+    transition: 0.3s;
+    color: white;
+    display: block;
+}
+.project-name:hover{
+    color: gray;
+    cursor: pointer;
+}
+.card-img-top{
+    width: 155px;
+    height: 150px;
+    display: inline;
+    margin: 5px;
+    border: 2px;
+    border-color: white;
+    border-radius: 2px;
+    border-style: solid;   
+}
+.card-pro:hover{
+    transform: scale(1.1);
+    transition:0.3s ease;
+}
+
+.card-title{
+    color: white;
+    font-size: 15px;
+}
+.card-text{
+    color: white;
+    font-size: 15px;
+}
+.card-pro{
+    margin-top: 25px;
+    width:210px;
+    border: 5px;
+    border-color: white;
+    border-radius: 2px;
+    border-style: solid;
+    text-align: center; 
+    display: inline-block;
+    margin-right: 10px;
+}
+.gitlink{
+    border-top: 5px;
+    border-color: white;
+    border-style: solid;
+    display:block;
+    color: white;
+    text-decoration: none;
+    padding: 5px;   
+    transition: 0.3s ease;
+}
+.gitlink:hover{
+    color: blue;
+    background-color:rgb(255, 255, 255);
+}
+.contact{
+    color: white;
+    text-align: center;
+}
+    
+hr {
+    border: none;
+    height: 1px;
+    background-color: #333;
+    margin: 30px 0;
+}
+.smlink img{
+    transition: 0.3s ease;
+}
+.smlink img:hover{
+    transform: scale(1.2);
+    cursor: pointer; 
+}
+.smlink a{
+    text-decoration: none;
+}
+.smlink a:focus{
+    outline: none;
+}
+.cnt:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    body {
+        background: black;
+        color: white;
+        margin: 10px;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .main {
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    .name {
+        font-size: 36px;
+        margin-left: 0;
+    }
+
+    .sub {
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    /* ABOUT */
+    .about_me {
+        margin: 10px;
+        text-align: center;
+    }
+
+    /* SKILLS */
+    .skill-img img {
+        width: 40px;
+        height: 40px;
+        margin: 8px;
+    }
+
+    /* PROJECT CARDS */
+    .card-pro {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .card-img-top {
+        width: 90%;
+        height: auto;
+    }
+
+    /* CONTACT */
+    .contact {
+        padding: 10px;
+    }
+}
