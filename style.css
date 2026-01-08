@@ -8,8 +8,62 @@ body{
     gap: 30px;
     margin-left:25px;
     cursor: pointer;
-   
 }
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  position: fixed;
+  
+}
+.change-theme{ 
+  position: relative;
+  display: inline-block;
+  color: white;
+  top: 25px;
+  right: 90px;
+  z-index: 1000;
+  position: fixed;
+
+}
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 30px;
+  top: 0; left: 0; right: 0; bottom: 0;
+  transition: 0.4s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #4CAF50;
+}
+
+input:checked + .slider::before {
+  transform: translateX(30px);
+}
+
 .main{
     width: 300px;
     height: 300px;
@@ -72,13 +126,13 @@ body{
     transform: scale(1.2);
     cursor: pointer;
 }
-span {
+/* span {
     margin-top: 8px;
     font-size: 14px;
     color: white;
     opacity: 0;
     transition: opacity 0.3s ease;
-}
+} */
 .projects{
     margin: 25px;
 }
@@ -167,6 +221,52 @@ hr {
 .cnt:hover{
     color: gray;
     cursor: pointer;
+}
+.light-theme {
+    background: white;
+    color: black;
+    transition: 0.3s;
+}
+.light-theme .name,
+.light-theme .sub,
+.light-theme .skill,
+.light-theme .about,
+.light-theme .contact,
+.light-theme .content,
+.light-theme .project-name,
+.light-theme .card-text,
+.light-theme .card-title,
+.light-theme p {
+    color: black;
+}
+
+
+.light-theme .card-pro,
+.light-theme .card-img-top,
+.light-theme .main{
+    border-color: black;
+    transition: 0.3s;
+}
+
+.light-theme .gitlink {
+    color: black;
+    border-color: black;
+    transition: 0.3s;
+}
+
+.light-theme .gitlink:hover {
+    background: black;
+    color: white;
+    transition: 0.3s;
+}
+
+.light-theme .name:hover,
+.light-theme .sub:hover,
+.light-theme .about:hover,
+.light-theme .skill:hover,
+.light-theme .project-name:hover,
+.light-theme .cnt:hover {
+    color: #555;   /* dark gray, visible on white */
 }
 
 @media (max-width: 768px) {
