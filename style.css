@@ -1,6 +1,7 @@
 body{
     background: black;
     margin: 25px;
+    transition: 0.3s ease;
 }
 .hero{
     display: flex;
@@ -8,6 +9,30 @@ body{
     gap: 30px;
     margin-left:25px;
     cursor: pointer;
+    max-width: 900px;
+}
+.skill-item{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.skill-name{
+    position: absolute;
+    bottom: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* background-color: black; */
+    color: white;
+    padding: 6px;
+    white-space: nowrap;
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease,transform 0.5s ease;
+}
+.skill-item:hover .skill-name{
+    opacity: 1;
+    transform: translateX(-50%) translateY(4px);
 }
 
 .switch {
@@ -69,7 +94,7 @@ input:checked + .slider::before {
     height: 300px;
     border: 4px;
     border-color: white;
-    border-radius: 2px;
+    border-radius: 10px;
     border-style: solid;
     margin-top: 50px;
 }
@@ -268,7 +293,12 @@ hr {
 .light-theme .cnt:hover {
     color: #555;   /* dark gray, visible on white */
 }
-
+.light-theme .skill-name{
+    color: black;
+}
+.light-theme .change-theme{
+    color: black;
+}
 @media (max-width: 768px) {
     body {
         background: black;
