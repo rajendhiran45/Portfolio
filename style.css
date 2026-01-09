@@ -2,20 +2,28 @@ body{
     background: black;
     margin: 25px;
     transition: 0.3s ease;
+    padding: 25px;
 }
-.hero{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin-left:25px;
-    cursor: pointer;
-    max-width: 900px;
+.hero {
+  display: flex;
+  align-items: center;
+  /* gap: 40px; */
+  max-width: 1100px;
+  /* margin: 80px auto 40px auto; center horizontally */
+  margin-left: 25px;
+}
+
+.hero-text{
+    margin-left: 170px;
 }
 .skill-item{
     position: relative;
     display: inline-block;
     cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
 }
+
 .skill-name{
     position: absolute;
     bottom: -28px;
@@ -96,13 +104,15 @@ input:checked + .slider::before {
     border-color: white;
     border-radius: 10px;
     border-style: solid;
-    margin-top: 50px;
+    margin-left: 25px;
 }
 .name{
     font-size: 60px;
     color: white;
-    margin-left: 175px;
+    text-align: center;
     transition: 0.3s;
+    margin: 0;
+    line-height: 1.1;
 }
 .name:hover{
     color:gray
@@ -110,8 +120,12 @@ input:checked + .slider::before {
 }
 .sub{
     color: white;
-    margin-left: 195px;
+    text-align: center;
     transition: 0.3s;
+    font-size: 18px;
+    margin-top: 6px;        
+    margin-bottom: 0;
+    line-height: 1.3;
 }
 .sub:hover{
     color: grey;
@@ -119,7 +133,7 @@ input:checked + .slider::before {
 }
 .about_me{
     color: white;
-    margin: 20px;
+    margin: 50px;
 
 }
 .about{
@@ -130,9 +144,7 @@ input:checked + .slider::before {
     color: gray;
     cursor: pointer;
 }
-.card{
-    margin: 25px;
-}
+
 .skill{
     font-size: 30px;
     transition: 0.3s;
@@ -142,6 +154,9 @@ input:checked + .slider::before {
 .skill:hover{
     color: gray;
     cursor: pointer;
+}
+.card strong{
+    margin-top: 25px;
 }
 .skill-img img{
     margin-top: 10px;
@@ -158,9 +173,7 @@ input:checked + .slider::before {
     opacity: 0;
     transition: opacity 0.3s ease;
 } */
-.projects{
-    margin: 25px;
-}
+
 .project-name{
     font-size: 30px;
     transition: 0.3s;
@@ -170,6 +183,9 @@ input:checked + .slider::before {
 .project-name:hover{
     color: gray;
     cursor: pointer;
+}
+.card{
+    margin-top: 30px;
 }
 .card-img-top{
     width: 155px;
