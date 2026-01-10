@@ -261,6 +261,7 @@ body{
     cursor: pointer;
     margin-top: 10px;
     margin-right: 10px;
+    isolation: isolate;
 }
 .skill-name{
     position: absolute;
@@ -283,7 +284,7 @@ body{
 .projects{
   max-width: 1100px;
   margin-left: 40px;
-  margin-top: 25px;
+  
 }
 .projects-title{
   color: white;
@@ -295,7 +296,6 @@ body{
     gap: 30px;
     padding: 40px;
     border-radius: 20px;
-    width: 100%;
     margin: 25px auto;
     background: linear-gradient(
         135deg,
@@ -493,7 +493,7 @@ hr {
   .skill-img {
     text-align: center;
   }
-
+  
   /* ===== Projects Section ===== */
   .projects {
     margin-left: 0;
